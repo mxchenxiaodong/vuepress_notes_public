@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>响应式数据 | ......</title>
+    <meta name="description" content="">
+    
+    
+    <link rel="preload" href="/vuepress_notes_public/assets/css/0.styles.3d6faa3b.css" as="style"><link rel="preload" href="/vuepress_notes_public/assets/js/app.2153f277.js" as="script"><link rel="preload" href="/vuepress_notes_public/assets/js/4.6945ad37.js" as="script"><link rel="prefetch" href="/vuepress_notes_public/assets/js/10.db4bf83d.js"><link rel="prefetch" href="/vuepress_notes_public/assets/js/11.4160b921.js"><link rel="prefetch" href="/vuepress_notes_public/assets/js/12.50959c55.js"><link rel="prefetch" href="/vuepress_notes_public/assets/js/13.22af0d65.js"><link rel="prefetch" href="/vuepress_notes_public/assets/js/14.1d014915.js"><link rel="prefetch" href="/vuepress_notes_public/assets/js/2.fe74a032.js"><link rel="prefetch" href="/vuepress_notes_public/assets/js/3.41252eed.js"><link rel="prefetch" href="/vuepress_notes_public/assets/js/5.5636cd22.js"><link rel="prefetch" href="/vuepress_notes_public/assets/js/6.cf4a0e04.js"><link rel="prefetch" href="/vuepress_notes_public/assets/js/7.c6ef01d7.js"><link rel="prefetch" href="/vuepress_notes_public/assets/js/8.e2170d55.js"><link rel="prefetch" href="/vuepress_notes_public/assets/js/9.528204ac.js">
+    <link rel="stylesheet" href="/vuepress_notes_public/assets/css/0.styles.3d6faa3b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vuepress_notes_public/" class="home-link router-link-active"><!----> <span class="site-name">......</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/vuepress_notes_public/" class="nav-link">Home</a></div><div class="nav-item"><a href="https://vuepress.vuejs.org/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  VuePress
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/vuepress_notes_public/" class="nav-link">Home</a></div><div class="nav-item"><a href="https://vuepress.vuejs.org/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  VuePress
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading open"><span>js</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/vuepress_notes_public/component_demo/timeline/achieve_timeline.html" class="sidebar-link">Timeline组件</a></li><li><a href="/vuepress_notes_public/reactivity_demo/reactivity.html" class="active sidebar-link">响应式数据</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/vuepress_notes_public/reactivity_demo/reactivity.html#需要实现的目标" class="sidebar-link">需要实现的目标</a></li><li class="sidebar-sub-header"><a href="/vuepress_notes_public/reactivity_demo/reactivity.html#获取变化通知" class="sidebar-link">获取变化通知</a></li><li class="sidebar-sub-header"><a href="/vuepress_notes_public/reactivity_demo/reactivity.html#通知变化" class="sidebar-link">通知变化</a></li><li class="sidebar-sub-header"><a href="/vuepress_notes_public/reactivity_demo/reactivity.html#依赖收集" class="sidebar-link">依赖收集</a></li><li class="sidebar-sub-header"><a href="/vuepress_notes_public/reactivity_demo/reactivity.html#文档" class="sidebar-link">文档</a></li></ul></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>ruby</span> <span class="arrow right"></span></p> <!----></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="响应式数据"><a href="#响应式数据" aria-hidden="true" class="header-anchor">#</a> 响应式数据</h1> <h2 id="需要实现的目标"><a href="#需要实现的目标" aria-hidden="true" class="header-anchor">#</a> 需要实现的目标</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">let</span> expense <span class="token operator">=</span> <span class="token punctuation">{</span>
+  duration<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span>    <span class="token comment">// 停车时长</span>
+  day_money<span class="token punctuation">:</span> <span class="token number">100</span><span class="token punctuation">,</span> <span class="token comment">// 一天多少钱</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">let</span> total  <span class="token comment">// 总金额</span>
+
+<span class="token keyword">function</span> <span class="token function">calculate</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  total <span class="token operator">=</span> expense<span class="token punctuation">.</span>duration <span class="token operator">*</span> expense<span class="token punctuation">.</span>day_money
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 实现一个watch，就可以像原生input change一样，观察到expense的变化</span>
+<span class="token comment">// 我们这里是执行calculate</span>
+<span class="token comment">// calculate只是一个callback: 可以是 重新计算、请求接口数据、重新渲染等等</span>
+<span class="token function">watch</span><span class="token punctuation">(</span>expense<span class="token punctuation">,</span> calculate<span class="token punctuation">)</span>
+
+expense<span class="token punctuation">.</span>duration <span class="token operator">=</span> <span class="token number">5</span> <span class="token comment">// 自动执行callback， total = 500</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><h2 id="获取变化通知"><a href="#获取变化通知" aria-hidden="true" class="header-anchor">#</a> 获取变化通知</h2> <p>在A发生变化的时候，依赖A的B自动更新。
+那我们怎么知道数据发生变化？</p> <p>在Ruby中，一个属性的getter 跟 setter可以这样定义：</p> <div class="language-ruby line-numbers-mode"><pre class="language-ruby"><code><span class="token keyword">class</span> <span class="token class-name">A</span>
+  <span class="token keyword">def</span> a
+    <span class="token variable">@a</span>
+  <span class="token keyword">end</span>
+
+  <span class="token keyword">def</span> a<span class="token operator">=</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span>
+    p <span class="token string">'大家请注意：我发生变化了...'</span>
+    <span class="token variable">@a</span> <span class="token operator">=</span> value
+  <span class="token keyword">end</span>
+<span class="token keyword">end</span>
+
+demo <span class="token operator">=</span> <span class="token constant">A</span><span class="token punctuation">.</span><span class="token keyword">new</span>
+<span class="token class-name">demo<span class="token punctuation">.</span>a</span> <span class="token operator">=</span> <span class="token number">100</span>
+<span class="token comment"># &quot;大家请注意：我发生变化了...&quot;</span>
+<span class="token comment"># =&gt; 100</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p>在 js 中也有类似的东西，叫做属性描述。用来定义该属性的行为。</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code>
+<span class="token keyword">let</span> expense <span class="token operator">=</span> <span class="token punctuation">{</span>
+  duration<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span>    <span class="token comment">// 停车时长</span>
+  day_money<span class="token punctuation">:</span> <span class="token number">100</span><span class="token punctuation">,</span> <span class="token comment">// 一天多少钱</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">let</span> total <span class="token operator">=</span> <span class="token keyword">null</span>  <span class="token comment">// 总金额</span>
+
+<span class="token comment">// 总金额的计算依赖于 duration * day_money</span>
+<span class="token keyword">function</span> <span class="token function">calculate</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  total <span class="token operator">=</span> expense<span class="token punctuation">.</span>duration <span class="token operator">*</span> expense<span class="token punctuation">.</span>day_money
+<span class="token punctuation">}</span>
+
+
+<span class="token keyword">let</span> value <span class="token operator">=</span> expense<span class="token punctuation">[</span><span class="token string">'duration'</span><span class="token punctuation">]</span>
+Object<span class="token punctuation">.</span><span class="token function">defineProperty</span><span class="token punctuation">(</span>expense<span class="token punctuation">,</span> <span class="token string">'duration'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  enumerable<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  configurable<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token keyword">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'duration属性被访问到了！'</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> value
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token keyword">set</span><span class="token punctuation">(</span>newValue<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'duration属性被修改了，新值为:'</span><span class="token punctuation">,</span> newValue<span class="token punctuation">,</span> <span class="token string">',旧值为：'</span><span class="token punctuation">,</span> value<span class="token punctuation">)</span>
+    value <span class="token operator">=</span> newValue
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+expense<span class="token punctuation">.</span>duration
+<span class="token comment">// output</span>
+<span class="token comment">// duration属性被访问到了！</span>
+<span class="token comment">// 2</span>
+
+expense<span class="token punctuation">.</span>duration <span class="token operator">=</span> <span class="token number">5</span>
+<span class="token comment">// duration属性被修改了，新值为: 5 ,旧值为： 2</span>
+<span class="token comment">// 5</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br></div></div><p>这里的setter里 <code>console.log</code> ==&gt; 相当于一个callback。
+实现watch功能：</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code>
+<span class="token keyword">let</span> expense <span class="token operator">=</span> <span class="token punctuation">{</span>
+  duration<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span>    <span class="token comment">// 停车时长</span>
+  day_money<span class="token punctuation">:</span> <span class="token number">100</span><span class="token punctuation">,</span> <span class="token comment">// 一天多少钱</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">watch</span><span class="token punctuation">(</span>obj<span class="token punctuation">,</span> key<span class="token punctuation">,</span> callback<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> value <span class="token operator">=</span> obj<span class="token punctuation">[</span>key<span class="token punctuation">]</span>
+  Object<span class="token punctuation">.</span><span class="token function">defineProperty</span><span class="token punctuation">(</span>obj<span class="token punctuation">,</span> key<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    enumerable<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    configurable<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token keyword">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> value
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token keyword">set</span><span class="token punctuation">(</span>newValue<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span><span class="token punctuation">(</span>newValue <span class="token operator">===</span> value<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span>
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token keyword">let</span> oldValue <span class="token operator">=</span> value
+        value <span class="token operator">=</span> newValue
+        <span class="token function">callback</span><span class="token punctuation">(</span>newValue<span class="token punctuation">,</span> oldValue<span class="token punctuation">)</span>  <span class="token comment">// setter 中触发回调函数，并将新值与旧值作为参数传入</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">watch</span><span class="token punctuation">(</span>expense<span class="token punctuation">,</span> <span class="token string">'duration'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span>newValue<span class="token punctuation">,</span> oldValue<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`duration属性被修改了，新值为：</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>newValue<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">，旧值为：</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>oldValue<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">`</span></span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+expense<span class="token punctuation">.</span>duration <span class="token operator">=</span> <span class="token number">99</span>
+<span class="token comment">// duration属性被修改了，新值为：99，旧值为：2</span>
+<span class="token comment">// 99</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br></div></div><h2 id="通知变化"><a href="#通知变化" aria-hidden="true" class="header-anchor">#</a> 通知变化</h2> <p>我们的目标是：A变化时，依赖于A的元素也跟着变化。
+使用发布/订阅的模式，有没有很熟悉~
+在 duration 发生变化时，发布”我已经更新了”的通知，所有订阅者各自根据注册的回调进行处理（打日志，重新渲染，重新计算等）</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">class</span> <span class="token class-name">Dep</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 订阅者列表</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>subs <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// 添加订阅</span>
+  <span class="token function">addSub</span><span class="token punctuation">(</span>sub<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>subs<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>sub<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// 触发订阅</span>
+  <span class="token function">notify</span><span class="token punctuation">(</span>newValue<span class="token punctuation">,</span> oldValue<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>subs<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span>sub <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      sub<span class="token punctuation">.</span><span class="token function">update</span><span class="token punctuation">(</span>newValue<span class="token punctuation">,</span> oldValue<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><p>基本的套路。这里我们注意一下，每个订阅者都要能够响应<code>update</code>方法，这里就有一定局限，得是对象才行。如果此时订阅者是个匿名函数，就处理不了。所以这里可以抽出个中间层出来 ----&gt; 叫做 Watcher。</p> <p>Watcher 类有个 update 方法，注册订阅的时候，callback 对应到 update 即可。</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// Watcher类，每个 Watcher 为一个订阅源</span>
+<span class="token keyword">class</span> <span class="token class-name">Watcher</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span>callback<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>callback <span class="token operator">=</span> callback
+  <span class="token punctuation">}</span>
+
+  <span class="token function">update</span><span class="token punctuation">(</span>newValue<span class="token punctuation">,</span> oldValue<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 被触发后执行回调</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">callback</span><span class="token punctuation">(</span>newValue<span class="token punctuation">,</span> oldValue<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">let</span> dep <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Dep</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">let</span> sub1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Watcher</span><span class="token punctuation">(</span><span class="token punctuation">(</span>newValue<span class="token punctuation">,</span> oldValue<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'第一条......'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token keyword">let</span> sub2 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Watcher</span><span class="token punctuation">(</span><span class="token punctuation">(</span>newValue<span class="token punctuation">,</span> oldValue<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'第二条......'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 一个watcher 相当于 一个sub</span>
+dep<span class="token punctuation">.</span><span class="token function">addSub</span><span class="token punctuation">(</span>sub1<span class="token punctuation">)</span>
+dep<span class="token punctuation">.</span><span class="token function">addSub</span><span class="token punctuation">(</span>sub2<span class="token punctuation">)</span>
+dep<span class="token punctuation">.</span><span class="token function">notify</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div><p>将 两者接个起来：</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code>
+<span class="token keyword">let</span> expense <span class="token operator">=</span> <span class="token punctuation">{</span>
+  duration<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span>    <span class="token comment">// 停车时长</span>
+  day_money<span class="token punctuation">:</span> <span class="token number">100</span><span class="token punctuation">,</span> <span class="token comment">// 一天多少钱</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">let</span> total <span class="token operator">=</span> <span class="token keyword">null</span>  <span class="token comment">// 总金额</span>
+
+<span class="token comment">// 总金额的计算依赖于 duration * day_money</span>
+<span class="token keyword">function</span> <span class="token function">calculate</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  total <span class="token operator">=</span> expense<span class="token punctuation">.</span>duration <span class="token operator">*</span> expense<span class="token punctuation">.</span>day_money
+<span class="token punctuation">}</span>
+
+
+<span class="token keyword">class</span> <span class="token class-name">Dep</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 订阅者列表</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>subs <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// 添加订阅</span>
+  <span class="token function">addSub</span><span class="token punctuation">(</span>sub<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>subs<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>sub<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// 触发订阅</span>
+  <span class="token function">notify</span><span class="token punctuation">(</span>newValue<span class="token punctuation">,</span> oldValue<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>subs<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span>sub <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      sub<span class="token punctuation">.</span><span class="token function">update</span><span class="token punctuation">(</span>newValue<span class="token punctuation">,</span> oldValue<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// Watcher类，每个 Watcher 为一个订阅源</span>
+<span class="token keyword">class</span> <span class="token class-name">Watcher</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span>callback<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>callback <span class="token operator">=</span> callback
+  <span class="token punctuation">}</span>
+
+  <span class="token function">update</span><span class="token punctuation">(</span>newValue<span class="token punctuation">,</span> oldValue<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 被触发后执行回调</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">callback</span><span class="token punctuation">(</span>newValue<span class="token punctuation">,</span> oldValue<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+
+
+<span class="token comment">// 使一个对象响应化</span>
+<span class="token comment">// 遍历对象所有key，全部设置属性描述</span>
+<span class="token keyword">function</span> <span class="token function">observify</span><span class="token punctuation">(</span>obj<span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  Object<span class="token punctuation">.</span><span class="token function">keys</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span>key<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token function">defineReactive</span><span class="token punctuation">(</span>obj<span class="token punctuation">,</span> key<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">defineReactive</span><span class="token punctuation">(</span>obj<span class="token punctuation">,</span> key<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> value <span class="token operator">=</span> obj<span class="token punctuation">[</span>key<span class="token punctuation">]</span>
+
+  Object<span class="token punctuation">.</span><span class="token function">defineProperty</span><span class="token punctuation">(</span>obj<span class="token punctuation">,</span> key<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    enumerable<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    configurable<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token keyword">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> value
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token keyword">set</span><span class="token punctuation">(</span>newValue<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>newValue <span class="token operator">==</span> value<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span>
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token keyword">let</span> oldValue <span class="token operator">=</span> value
+        value <span class="token operator">=</span> newValue
+        globalDep<span class="token punctuation">.</span><span class="token function">notify</span><span class="token punctuation">(</span>newValue<span class="token punctuation">,</span> oldValue<span class="token punctuation">)</span>   <span class="token comment">// &lt;========= 变动时触发通知</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token keyword">let</span> globalDep <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Dep</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">let</span> sub1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Watcher</span><span class="token punctuation">(</span><span class="token punctuation">(</span>newValue<span class="token punctuation">,</span> oldValue<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`属性被修改了，新值为：</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>newValue<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">，旧值为：</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>oldValue<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">`</span></span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+globalDep<span class="token punctuation">.</span><span class="token function">addSub</span><span class="token punctuation">(</span>sub1<span class="token punctuation">)</span>
+
+<span class="token comment">// 让对象响应化</span>
+<span class="token function">observify</span><span class="token punctuation">(</span>expense<span class="token punctuation">)</span>
+
+expense<span class="token punctuation">.</span>duration <span class="token operator">=</span> <span class="token number">20</span>
+<span class="token comment">// 属性被修改了，新值为：20，旧值为：2</span>
+<span class="token comment">// 20</span>
+
+expense<span class="token punctuation">.</span>day_money <span class="token operator">=</span> <span class="token number">555</span>
+<span class="token comment">// 属性被修改了，新值为：555，旧值为：100</span>
+<span class="token comment">// 555</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br></div></div><p>现在，还要继续调整。
+因为现在这个globalDep是针对整个对象所有属性的。</p> <p>比如 total 是 依赖 expense.duration 跟  expense.day_money，跟expense.created_at没有关系。
+所以我们要试着将Dep实例移到每个属性里面，也就是说，每个属性都有自己订阅列表。</p> <p>那我们怎么知道属性有哪些订阅者？在哪里进行订阅？</p> <h2 id="依赖收集"><a href="#依赖收集" aria-hidden="true" class="header-anchor">#</a> 依赖收集</h2> <p>那我们怎么知道属性有哪些订阅者？在哪里进行订阅？</p> <div class="tip custom-block"><p class="custom-block-title">也许可以:</p> <ul><li>谁依赖(使用)了该属性，谁就是订阅者。</li> <li>在使用属性值时，会触发getter，在那里进行订阅。</li></ul></div> <p><img src="/vuepress_notes_public/assets/img/self_dep.fd7eaed3.png" alt="self_dep"></p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">defineReactive</span><span class="token punctuation">(</span>obj<span class="token punctuation">,</span> key<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> dep <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Dep</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// &lt;========= 为每个键都创建一个 dep</span>
+  <span class="token keyword">let</span> value <span class="token operator">=</span> obj<span class="token punctuation">[</span>key<span class="token punctuation">]</span>
+
+  <span class="token comment">// 由于闭包，属性时刻可以访问到以上变量</span>
+  Object<span class="token punctuation">.</span><span class="token function">defineProperty</span><span class="token punctuation">(</span>obj<span class="token punctuation">,</span> key<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    enumerable<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    configurable<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token keyword">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      dep<span class="token punctuation">.</span><span class="token function">depend</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// &lt;========= 进行订阅 ????</span>
+      <span class="token keyword">return</span> value
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token keyword">set</span><span class="token punctuation">(</span>newValue<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>newValue <span class="token operator">==</span> value<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span>
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token keyword">let</span> oldValue <span class="token operator">=</span> value
+        value <span class="token operator">=</span> newValue
+        dep<span class="token punctuation">.</span><span class="token function">notify</span><span class="token punctuation">(</span>newValue<span class="token punctuation">,</span> oldValue<span class="token punctuation">)</span>   <span class="token comment">// &lt;========= 变动时触发通知</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><p>比如：total 依赖 expense.duration。 当expense.duration改变时，callback为”计算费用并重新渲染页面“，为该callback创建一个watcher作为订阅源。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>sub1 = new Watch((newValue, oldValue) =&gt; {
+	total = expense.duration * expense.day_money
+	render
+})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><blockquote><p><code>dep.depend()</code> 要如何将 sub1给添加进来订阅列表？？</p></blockquote> <p>这里是没有办法把sub1传进来 defineProperty 来。因为observify是针对所有key一块处理的，没办法单独传一个sub1针对某个属性。</p> <p>那该怎么做？？？？？？</p> <p>比如： <code>&lt;p&gt;{ expense.duration * expense.day_money}&lt;/p&gt;</code>
+模板引擎会被解释为：</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token string">'&lt;p&gt;'</span><span class="token operator">+</span><span class="token punctuation">(</span>expense<span class="token punctuation">.</span>duration <span class="token operator">*</span> expense<span class="token punctuation">.</span>day_money<span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">'&lt;/p&gt;'</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>页面初始化的时候，init肯定会执行一次。这个时候所有的页面渲染需要的数据，都会被访问到。而那些无关的数据，就算它们发生改变，也不需要重新渲染。</p> <p>在页面初始化时，在一个公共的地方存放当前watcher(callback就是更新页面处理), 当到依赖数据时，就将当前watcher放到对应的dep里面。这是一个很巧妙的做法。</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// 用来记录当前是哪个watcher, 共用。</span>
+<span class="token comment">// 将当前watcher放入当前属性的订阅列表中</span>
+Dep<span class="token punctuation">.</span>target <span class="token operator">=</span> <span class="token keyword">null</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p><img src="/vuepress_notes_public/assets/img/watch.2beb750f.png" alt="watch"></p> <p>遍历对象，定义属性描述：</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// 使一个对象响应化</span>
+<span class="token comment">// 遍历对象所有key，全部设置属性描述</span>
+<span class="token keyword">function</span> <span class="token function">observify</span><span class="token punctuation">(</span>obj<span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  Object<span class="token punctuation">.</span><span class="token function">keys</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span>key<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token function">defineReactive</span><span class="token punctuation">(</span>obj<span class="token punctuation">,</span> key<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">defineReactive</span><span class="token punctuation">(</span>obj<span class="token punctuation">,</span> key<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> dep <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Dep</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// &lt;========= 为每个键都创建一个 dep</span>
+  <span class="token keyword">let</span> value <span class="token operator">=</span> obj<span class="token punctuation">[</span>key<span class="token punctuation">]</span>
+
+  <span class="token comment">// 由于闭包，属性时刻可以访问到以上变量</span>
+  Object<span class="token punctuation">.</span><span class="token function">defineProperty</span><span class="token punctuation">(</span>obj<span class="token punctuation">,</span> key<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    enumerable<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    configurable<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token keyword">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 相当于一个状态值。用来记录当前线程正在处理哪个watcher,如果存在，将其加入到订阅列表中</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>Dep<span class="token punctuation">.</span>target<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        dep<span class="token punctuation">.</span><span class="token function">depend</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// &lt;========= 进行订阅</span>
+      <span class="token punctuation">}</span>
+
+      <span class="token keyword">return</span> value
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token keyword">set</span><span class="token punctuation">(</span>newValue<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>newValue <span class="token operator">==</span> value<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span>
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token keyword">let</span> oldValue <span class="token operator">=</span> value
+        value <span class="token operator">=</span> newValue
+        dep<span class="token punctuation">.</span><span class="token function">notify</span><span class="token punctuation">(</span>newValue<span class="token punctuation">,</span> oldValue<span class="token punctuation">)</span>   <span class="token comment">// &lt;========= 变动时触发通知</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br></div></div><p>Dep代码：</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">let</span> uid <span class="token operator">=</span> <span class="token number">1</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Dep</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 为每个 dep 标记一个 uid</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>id <span class="token operator">=</span> uid<span class="token operator">++</span>
+
+    <span class="token comment">// 订阅者列表</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>subs <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// 添加订阅</span>
+  <span class="token function">addSub</span><span class="token punctuation">(</span>sub<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>subs<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>sub<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// 触发订阅</span>
+  <span class="token function">notify</span><span class="token punctuation">(</span>newValue<span class="token punctuation">,</span> oldValue<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>subs<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span>sub <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      sub<span class="token punctuation">.</span><span class="token function">update</span><span class="token punctuation">(</span>newValue<span class="token punctuation">,</span> oldValue<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">depend</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 这里的做法是 将当前的dep传出去。</span>
+    <span class="token comment">// 而不是将watcher传进来，这一点很重要</span>
+    <span class="token comment">// Dep.target 是个watcher</span>
+    Dep<span class="token punctuation">.</span>target <span class="token operator">&amp;&amp;</span> Dep<span class="token punctuation">.</span>target<span class="token punctuation">.</span><span class="token function">addDep</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br></div></div><p>中间层的Watcher:</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// 用来记录当前是哪个watcher, 共用。</span>
+<span class="token comment">// 将当前watcher放入当前属性的订阅列表中</span>
+Dep<span class="token punctuation">.</span>target <span class="token operator">=</span> <span class="token keyword">null</span>
+
+<span class="token comment">// Watcher类，每个 watcher 为一个订阅源</span>
+<span class="token keyword">class</span> <span class="token class-name">Watcher</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span>expFn<span class="token punctuation">,</span> callback<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>expFn <span class="token operator">=</span> expFn
+    <span class="token keyword">this</span><span class="token punctuation">.</span>callback <span class="token operator">=</span> callback
+    <span class="token keyword">this</span><span class="token punctuation">.</span>depIds <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Set</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// 标记当前 watcher 已经加入到了哪些 dep</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>value <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">subAndGetValue</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">update</span><span class="token punctuation">(</span>newValue<span class="token punctuation">,</span> oldValue<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 被触发后执行回调</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">callback</span><span class="token punctuation">(</span>newValue<span class="token punctuation">,</span> oldValue<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// 这里才将watcher添加进dep</span>
+  <span class="token function">addDep</span><span class="token punctuation">(</span>dep<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">//防止重复订阅，防止在一个 dep 中订阅两次</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token keyword">this</span><span class="token punctuation">.</span>depIds<span class="token punctuation">.</span><span class="token function">has</span><span class="token punctuation">(</span>dep<span class="token punctuation">.</span>id<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>depIds<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>dep<span class="token punctuation">.</span>id<span class="token punctuation">)</span>
+      dep<span class="token punctuation">.</span><span class="token function">addSub</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// 执行依赖收集函数，订阅依赖！</span>
+  <span class="token comment">// 只在expFn里面访问到属性，才会注册相关订阅</span>
+  <span class="token comment">// 为什么要定义为expFn？这里执行函数的内容，比如 a + b.</span>
+  <span class="token comment">// 访问 a 时，就会进入到 a的getter, 这个时候,</span>
+  <span class="token comment">// 发现Dep.target有值 =&gt; 那么执行 dep.depend() =&gt; addDep()实现了真正的订阅</span>
+  <span class="token comment">// 然后将Dep.target又置为空。</span>
+  <span class="token comment">// b的操作跟a类似。</span>
+  <span class="token comment">// 所以在 expFn 访问过的属性（1个 或 多个），都实现了订阅。</span>
+  <span class="token function">subAndGetValue</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    Dep<span class="token punctuation">.</span>target <span class="token operator">=</span> <span class="token keyword">this</span>
+    <span class="token keyword">let</span> _value <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>expFn<span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    Dep<span class="token punctuation">.</span>target <span class="token operator">=</span> <span class="token keyword">null</span>
+
+    <span class="token keyword">return</span> _value
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 封装成一个 Watcher</span>
+<span class="token keyword">function</span> <span class="token function">watch</span><span class="token punctuation">(</span>expFn<span class="token punctuation">,</span> callback<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Watcher</span><span class="token punctuation">(</span>expFn<span class="token punctuation">,</span> callback<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br></div></div><p>生成响应式数据：</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">let</span> expense <span class="token operator">=</span> <span class="token punctuation">{</span>
+  duration<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span>    <span class="token comment">// 停车时长</span>
+  day_money<span class="token punctuation">:</span> <span class="token number">100</span><span class="token punctuation">,</span> <span class="token comment">// 一天多少钱</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">let</span> total <span class="token operator">=</span> <span class="token keyword">null</span>  <span class="token comment">// 总金额</span>
+
+<span class="token keyword">function</span> <span class="token function">calculate</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 这个地方访问了 duration 跟 day_money 的getter，但其实不会去注册订阅者，因为此时Dep.target为空</span>
+  <span class="token keyword">return</span> expense<span class="token punctuation">.</span>duration <span class="token operator">*</span> expense<span class="token punctuation">.</span>day_money
+<span class="token punctuation">}</span>
+
+
+<span class="token comment">// 让对象响应化</span>
+<span class="token function">observify</span><span class="token punctuation">(</span>expense<span class="token punctuation">)</span>
+
+<span class="token keyword">let</span> <span class="token function-variable function">expFn</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> expense<span class="token punctuation">.</span>duration <span class="token punctuation">}</span>
+<span class="token keyword">let</span> <span class="token function-variable function">callback</span> <span class="token operator">=</span> <span class="token punctuation">(</span>newValue<span class="token punctuation">,</span> oldValue<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`属性被修改了，新值为：</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>newValue<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">，旧值为：</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>oldValue<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">`</span></span><span class="token punctuation">)</span>
+  total <span class="token operator">=</span> <span class="token function">calculate</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`total is </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>total<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">`</span></span><span class="token punctuation">)</span> <span class="token comment">// 模拟重新渲染函数</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">watch</span><span class="token punctuation">(</span>expFn<span class="token punctuation">,</span> callback<span class="token punctuation">)</span>
+expense<span class="token punctuation">.</span>duration <span class="token operator">=</span> <span class="token number">20</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div><p>回到最开始的Vue页面，</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token string">'&lt;p&gt;'</span> <span class="token operator">+</span> <span class="token punctuation">(</span>expense<span class="token punctuation">.</span>duration <span class="token operator">*</span>  expense<span class="token punctuation">.</span>day_money<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">'&lt;/p&gt;'</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> expFn
+<span class="token function">render</span><span class="token punctuation">(</span>渲染页面<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> callback
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p><img src="/vuepress_notes_public/assets/img/vue_watch.5de7af21.png" alt="vue_watch"></p> <h2 id="文档"><a href="#文档" aria-hidden="true" class="header-anchor">#</a> 文档</h2> <ul><li><a href="https://medium.com/@mitchocail/observer-pattern-in-ruby-e80ac3c1dac7" target="_blank" rel="noopener noreferrer">Observer Pattern in RUBY – Mitch – Medium<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> — — 发布/订阅</li> <li><a href="http://ruby-doc.org/stdlib-2.5.3/libdoc/observer/rdoc/Observable.html#method-i-add_observer" target="_blank" rel="noopener noreferrer">Module: Observable (Ruby 2.5.3)<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><a href="https://www.404forest.com/2017/06/28/modern-web-development-tech-analysis-data-reactivity-system/" target="_blank" rel="noopener noreferrer">现代前端科技解析 —— 数据响应式系统 (Data Reactivity System) - 404Forest<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><a href="https://gist.github.com/staltz/868e7e9bc2a7b8c1f754" target="_blank" rel="noopener noreferrer">The introduction to Reactive Programming you’ve been missing · GitHub<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/vuepress_notes_public/component_demo/timeline/achieve_timeline.html" class="prev">
+          Timeline组件
+        </a></span> <span class="next"><a href="/vuepress_notes_public/ruby/sidekiq.html">
+          分享之sidekiq
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/vuepress_notes_public/assets/js/4.6945ad37.js" defer></script><script src="/vuepress_notes_public/assets/js/app.2153f277.js" defer></script>
+  </body>
+</html>

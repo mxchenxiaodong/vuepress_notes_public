@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Timeline组件 | ......</title>
+    <meta name="description" content="">
+    
+    
+    <link rel="preload" href="/vuepress_notes_public/assets/css/0.styles.3d6faa3b.css" as="style"><link rel="preload" href="/vuepress_notes_public/assets/js/app.2153f277.js" as="script"><link rel="preload" href="/vuepress_notes_public/assets/js/9.528204ac.js" as="script"><link rel="preload" href="/vuepress_notes_public/assets/js/2.fe74a032.js" as="script"><link rel="prefetch" href="/vuepress_notes_public/assets/js/10.db4bf83d.js"><link rel="prefetch" href="/vuepress_notes_public/assets/js/11.4160b921.js"><link rel="prefetch" href="/vuepress_notes_public/assets/js/12.50959c55.js"><link rel="prefetch" href="/vuepress_notes_public/assets/js/13.22af0d65.js"><link rel="prefetch" href="/vuepress_notes_public/assets/js/14.1d014915.js"><link rel="prefetch" href="/vuepress_notes_public/assets/js/3.41252eed.js"><link rel="prefetch" href="/vuepress_notes_public/assets/js/4.6945ad37.js"><link rel="prefetch" href="/vuepress_notes_public/assets/js/5.5636cd22.js"><link rel="prefetch" href="/vuepress_notes_public/assets/js/6.cf4a0e04.js"><link rel="prefetch" href="/vuepress_notes_public/assets/js/7.c6ef01d7.js"><link rel="prefetch" href="/vuepress_notes_public/assets/js/8.e2170d55.js">
+    <link rel="stylesheet" href="/vuepress_notes_public/assets/css/0.styles.3d6faa3b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vuepress_notes_public/" class="home-link router-link-active"><!----> <span class="site-name">......</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/vuepress_notes_public/" class="nav-link">Home</a></div><div class="nav-item"><a href="https://vuepress.vuejs.org/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  VuePress
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/vuepress_notes_public/" class="nav-link">Home</a></div><div class="nav-item"><a href="https://vuepress.vuejs.org/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  VuePress
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading open"><span>js</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/vuepress_notes_public/component_demo/timeline/achieve_timeline.html" class="active sidebar-link">Timeline组件</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/vuepress_notes_public/component_demo/timeline/achieve_timeline.html#功能实现" class="sidebar-link">功能实现</a></li><li class="sidebar-sub-header"><a href="/vuepress_notes_public/component_demo/timeline/achieve_timeline.html#配合sass" class="sidebar-link">配合SASS</a></li><li class="sidebar-sub-header"><a href="/vuepress_notes_public/component_demo/timeline/achieve_timeline.html#总结" class="sidebar-link">总结</a></li></ul></li><li><a href="/vuepress_notes_public/reactivity_demo/reactivity.html" class="sidebar-link">响应式数据</a></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>ruby</span> <span class="arrow right"></span></p> <!----></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="timeline组件"><a href="#timeline组件" aria-hidden="true" class="header-anchor">#</a> Timeline组件</h1> <p>🍻 🍻 🍻 🍻 🍻效果图如下
+🎉 🎉 🎉 🎉 🎉
+<ul class="self-timeline self-timeline-pending"><li class="self-timeline-item"><div class="self-timeline-item-tail"></div> <div class="self-timeline-item-head self-timeline-item-head-blue"></div> <div class="self-timeline-item-content"><span class="self-title"> ......</span> <p class="self-content">
+      something here....watching movie...watching movie...watching movie...watching movie...watching movie...watching movie...watching movie...
+    </p> <div class="self-tag-group"><span class="self-tag">
+        Life
+      </span><span class="self-tag">
+        Movie
+      </span></div></div></li><li class="self-timeline-item"><div class="self-timeline-item-tail"></div> <div class="self-timeline-item-head self-timeline-item-head-blue"></div> <div class="self-timeline-item-content"><span class="self-title"> 重要</span> <p class="self-content">
+      我们命中注定要失去所爱之人，不然我们怎么知道他们在我们生命中有多重要。
+    </p> <div class="self-tag-group"><span class="self-tag">
+        Time
+      </span><span class="self-tag">
+        Life
+      </span></div></div></li><li class="self-timeline-item"><div class="self-timeline-item-tail"></div> <div class="self-timeline-item-head self-timeline-item-head-green"></div> <div class="self-timeline-item-content"><span class="self-title"> 武林外传</span> <p class="self-content">
+      电影也应该尽量不直接言及悲伤和寂寞，而要把那份悲伤和寂寞表现出来。借助观众的想象力，让他们参与到电影中来。
+    </p> <div class="self-tag-group"><span class="self-tag">
+        Life
+      </span><span class="self-tag">
+        Movie
+      </span></div></div></li><li class="self-timeline-item"><div class="self-timeline-item-tail"></div> <div class="self-timeline-item-head self-timeline-item-head-blue"></div> <div class="self-timeline-item-content"><span class="self-title"> 吃鸡攻略</span> <p class="self-content">
+      1、在野外被打了，要立马根据枪声/火光/子弹着弹点反方向找掩体，最好不要原地趴下，趴下了80%都会死。2、野外对枪(敌我都躲树后)，最好不要趴下，趴下会让你在垂直上的可射击角度变小。3、跳伞时候离目标点还有100米左右就可以改用垂直下降了(就是头朝下)，自动开伞后就可以飘到目标点了。5、在有得选择的情况下，不要背两把同类型的枪，比如背了一把Scar(自动步枪)，看到地上有ump9(冲锋枪)和ak(自动步枪)，认为ak(自动步枪)比较厉害再背了一把ak。当然，游戏是人玩的，总有例外，要是有8倍也可以背一把ak当狙击枪用。6、不建议萌新在非楼宇/巷战的情况下，使用自动步枪的自动模式。7、个人认为的萌新最强套装是满配M416/scar+S12K。
+    </p> <div class="self-tag-group"><span class="self-tag">
+        Life
+      </span><span class="self-tag">
+        Game
+      </span></div></div></li> <li class="self-timeline-item"><div class="self-timeline-item-tail"></div> <div class="self-timeline-item-head self-timeline-item-head-blue"></div> <div class="self-timeline-item-content"><a href="#">查看更多</a></div></li></ul>
+🍻 🍻 🍻 🍻 🍻
+🎉 🎉 🎉 🎉 🎉</p> <h2 id="功能实现"><a href="#功能实现" aria-hidden="true" class="header-anchor">#</a> 功能实现</h2> <p>主要参考了 <code>iview-ui</code>。
+实现的Timeline组件包含部分:</p> <ul><li>头部-head（小圆圈）</li> <li>尾部-tail（竖着那条线）</li> <li>内容-content</li> <li>控制最后一个节点tail的显示与否</li></ul> <p>两个组件: <code>Timeline.vue</code> + <code>TimelineItem.vue</code>。其中<code>TimelineItem.vue</code>通过<code>Timeline.vue</code>的<code>slot</code>传进来。</p> <div class="language-html line-numbers-mode"><pre class="language-html"><code>/* Timeline.vue */
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span> <span class="token attr-name">:class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>forTimeline<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>slot</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>slot</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript">
+  <span class="token keyword">const</span> prefixCls <span class="token operator">=</span> <span class="token string">&quot;self-timeline&quot;</span>
+
+  <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+    name<span class="token punctuation">:</span> <span class="token string">&quot;Timeline&quot;</span><span class="token punctuation">,</span>
+    props<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      pending<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        type<span class="token punctuation">:</span> Boolean<span class="token punctuation">,</span>
+        <span class="token keyword">default</span><span class="token punctuation">:</span> <span class="token boolean">false</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    computed<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 一开始，为加上timeline类</span>
+      <span class="token comment">// 是否设置pending类</span>
+      <span class="token function">forTimeline</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token punctuation">[</span>
+          prefixCls<span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token punctuation">[</span><span class="token template-string"><span class="token string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>prefixCls<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">-pending`</span></span><span class="token punctuation">]</span><span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>pending
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br></div></div><div class="language-html line-numbers-mode"><pre class="language-html"><code>/* TimelineItem.vue */
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">:class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>itemClass<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">:class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>tailClass<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">:class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>headClass<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:</span><span class="token style-attr language-css"><span class="token attr-name"><span class="token attr-name">style</span></span><span class="token punctuation">=&quot;</span><span class="token attr-value">customColor</span><span class="token punctuation">&quot;</span></span> <span class="token attr-name">ref</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>dot<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>slot</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>dot<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>slot</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">:class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>contentClass<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>slot</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>slot</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript">
+<span class="token keyword">const</span> prefixCls <span class="token operator">=</span> <span class="token string">'self-timeline'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  name<span class="token punctuation">:</span> <span class="token string">'TimelineItem'</span><span class="token punctuation">,</span>
+  props<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    color<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> String<span class="token punctuation">,</span>
+      <span class="token keyword">default</span><span class="token punctuation">:</span> <span class="token string">'blue'</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">data</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      dot<span class="token punctuation">:</span> <span class="token boolean">false</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">mounted</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 是否使用自定义的图标</span>
+    <span class="token comment">// 如果包含了传入的内容，说明是有意图使用自定义的内容</span>
+    <span class="token comment">// 同时默认的图标不需要显示</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>dot <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">.</span>dot<span class="token punctuation">.</span>innerHTML<span class="token punctuation">.</span>length <span class="token operator">?</span> <span class="token boolean">true</span> <span class="token punctuation">:</span> <span class="token boolean">false</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  computed<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token function">itemClass</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token template-string"><span class="token string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>prefixCls<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">-item`</span></span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">tailClass</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token template-string"><span class="token string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>prefixCls<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">-item-tail`</span></span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">headClass</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 注意: item-head-custom定义时，因为如果要使用变量做key，需要加个中括号</span>
+      <span class="token comment">// 这个与vue没关系</span>
+
+      <span class="token comment">// 而返回一个数组, 里面包含对象样式，最终全都解析成html的class</span>
+      <span class="token comment">// 这个是vue的用法</span>
+      <span class="token keyword">return</span> <span class="token punctuation">[</span>
+        <span class="token template-string"><span class="token string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>prefixCls<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">-item-head`</span></span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          <span class="token punctuation">[</span><span class="token template-string"><span class="token string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>prefixCls<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">-item-head-custom`</span></span><span class="token punctuation">]</span><span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>dot<span class="token punctuation">,</span>
+          <span class="token punctuation">[</span><span class="token template-string"><span class="token string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>prefixCls<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">-item-head-</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token keyword">this</span><span class="token punctuation">.</span>color<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">`</span></span><span class="token punctuation">]</span><span class="token punctuation">:</span> <span class="token operator">!</span><span class="token keyword">this</span><span class="token punctuation">.</span>dot <span class="token comment">// 暂时不使用this.headColorShow, 样式有点问题</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">headColorShow</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>color <span class="token operator">==</span> <span class="token string">'blue'</span> <span class="token operator">||</span> <span class="token keyword">this</span><span class="token punctuation">.</span>color <span class="token operator">==</span> <span class="token string">'green'</span> <span class="token operator">||</span> <span class="token keyword">this</span><span class="token punctuation">.</span>color <span class="token operator">==</span> <span class="token string">'red'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">customColor</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">let</span> style <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>color<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token keyword">this</span><span class="token punctuation">.</span>headColorShow<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          style <span class="token operator">=</span> <span class="token punctuation">{</span>
+            <span class="token string">'color'</span><span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>color<span class="token punctuation">,</span>
+            <span class="token string">'border-color'</span><span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>color
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+
+      <span class="token keyword">return</span> style<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">contentClass</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token template-string"><span class="token string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>prefixCls<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">-item-content`</span></span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br></div></div><div class="language-scss line-numbers-mode"><pre class="language-scss"><code>&lt;style lang=<span class="token string">&quot;scss&quot;</span>&gt;
+  <span class="token property"><span class="token variable">$timeline-prefix-cls</span></span><span class="token punctuation">:</span> self-timeline<span class="token punctuation">;</span>
+  <span class="token property"><span class="token variable">$timeline-color</span></span><span class="token punctuation">:</span> #e8eaec<span class="token punctuation">;</span>
+  <span class="token property"><span class="token variable">$primary-color</span></span><span class="token punctuation">:</span> #2d8cf0<span class="token punctuation">;</span>
+  <span class="token property"><span class="token variable">$error-color</span></span><span class="token punctuation">:</span>  #ed4014<span class="token punctuation">;</span>
+  <span class="token property"><span class="token variable">$success-color</span></span><span class="token punctuation">:</span> #19be6b<span class="token punctuation">;</span>
+
+  <span class="token selector">.<span class="token variable">#{$timeline-prefix-cls}</span> </span><span class="token punctuation">{</span>
+    <span class="token property">list-style</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+    <span class="token property">margin</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">padding</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+
+    <span class="token selector"><span class="token parent important">&amp;</span>-item </span><span class="token punctuation">{</span>
+      <span class="token property">margin</span><span class="token punctuation">:</span> 0 <span class="token important">!important</span><span class="token punctuation">;</span>
+      <span class="token property">padding</span><span class="token punctuation">:</span> 0 0 12px 0<span class="token punctuation">;</span>
+      <span class="token property">list-style</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+      <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+
+      <span class="token selector"><span class="token parent important">&amp;</span>-tail </span><span class="token punctuation">{</span>
+        <span class="token property">height</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+        <span class="token property">border-left</span><span class="token punctuation">:</span> 1px solid <span class="token variable">$timeline-color</span><span class="token punctuation">;</span>
+        <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+        <span class="token property">left</span><span class="token punctuation">:</span> 7px<span class="token punctuation">;</span>
+        <span class="token property">top</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+
+      <span class="token selector"><span class="token parent important">&amp;</span>-head </span><span class="token punctuation">{</span>
+        <span class="token property">width</span><span class="token punctuation">:</span> 13px<span class="token punctuation">;</span>
+        <span class="token property">height</span><span class="token punctuation">:</span> 13px<span class="token punctuation">;</span>
+        <span class="token property">background-color</span><span class="token punctuation">:</span> #fff<span class="token punctuation">;</span>
+        <span class="token property">border-radius</span><span class="token punctuation">:</span> 50%<span class="token punctuation">;</span>
+        <span class="token property">border</span><span class="token punctuation">:</span> 1px solid transparent<span class="token punctuation">;</span>
+        <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+
+        <span class="token selector"><span class="token parent important">&amp;</span>-blue </span><span class="token punctuation">{</span>
+          <span class="token property">border-color</span><span class="token punctuation">:</span> <span class="token variable">$primary-color</span><span class="token punctuation">;</span>
+          <span class="token property">color</span><span class="token punctuation">:</span> <span class="token variable">$primary-color</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token selector"><span class="token parent important">&amp;</span>-red </span><span class="token punctuation">{</span>
+          <span class="token property">border-color</span><span class="token punctuation">:</span> <span class="token variable">$error-color</span><span class="token punctuation">;</span>
+          <span class="token property">color</span><span class="token punctuation">:</span> <span class="token variable">$error-color</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token selector"><span class="token parent important">&amp;</span>-green </span><span class="token punctuation">{</span>
+          <span class="token property">border-color</span><span class="token punctuation">:</span> <span class="token variable">$success-color</span><span class="token punctuation">;</span>
+          <span class="token property">color</span><span class="token punctuation">:</span> <span class="token variable">$success-color</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+
+      <span class="token selector"><span class="token parent important">&amp;</span>-content </span><span class="token punctuation">{</span>
+        <span class="token property">padding</span><span class="token punctuation">:</span> 1px 1px 10px 24px<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+
+      <span class="token comment">// 注意拼接类名时，使用#{$var_name}</span>
+      <span class="token comment">// 最后一条竖线去掉</span>
+      <span class="token selector"><span class="token parent important">&amp;</span>:last-child </span><span class="token punctuation">{</span>
+        <span class="token selector">.<span class="token variable">#{$timeline-prefix-cls}</span>-item-tail </span><span class="token punctuation">{</span>
+          <span class="token property">display</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// 如果指定了pending，则对倒数第二个item做一些处理</span>
+    &amp;-pending &amp;<span class="token property">-item</span><span class="token punctuation">:</span><span class="token function">nth-last-of-type</span><span class="token punctuation">(</span>2<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// tail线变成......</span>
+      <span class="token selector">.<span class="token variable">#{$timeline-prefix-cls}</span>-item-tail </span><span class="token punctuation">{</span>
+        <span class="token property">border-left</span><span class="token punctuation">:</span> 1px dotted <span class="token variable">$timeline-color</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+
+      <span class="token comment">// 让内容项保证一定的高度，保持美观</span>
+      <span class="token selector">.<span class="token variable">#{$timeline-prefix-cls}</span>-item-content </span><span class="token punctuation">{</span>
+        <span class="token property">min-height</span><span class="token punctuation">:</span> 48px<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+&lt;/style&gt;
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br></div></div><h2 id="配合sass"><a href="#配合sass" aria-hidden="true" class="header-anchor">#</a> 配合<a href="https://www.sasscss.com/" target="_blank" rel="noopener noreferrer">SASS<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></h2> <div class="tip custom-block"><p class="custom-block-title">TIP</p> <ul><li>使用 <code>&amp;</code> 来引用父级元素</li></ul></div> <div class="language-sass line-numbers-mode"><pre class="language-sass"><code><span class="token selector">.self-timeline {</span>
+<span class="token property-line">    <span class="token property">list-style</span><span class="token punctuation">:</span> none;</span>
+
+    <span class="token selector">&amp;-item {</span>
+<span class="token property-line">      <span class="token property">margin</span><span class="token punctuation">:</span> 0 <span class="token important">!important</span>;</span>
+    <span class="token selector">}</span>
+<span class="token selector">}</span>
+
+<span class="token comment">// 生成的类如下:</span>
+<span class="token comment">// .self-timeline</span>
+<span class="token comment">// .self-timeline-item</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><div class="tip custom-block"><p class="custom-block-title">TIP</p> <ul><li>使用 <code>$</code> 来定义变量</li> <li>使用 <code>#</code> 来拼接字符串（跟Ruby一样）</li></ul></div> <div class="language-sass line-numbers-mode"><pre class="language-sass"><code><span class="token variable-line"><span class="token variable">$timeline-prefix-cls</span><span class="token punctuation">:</span> self-timeline;</span>
+<span class="token selector">.#{$timeline-prefix-cls} {</span>
+<span class="token property-line">  <span class="token property">list-style</span><span class="token punctuation">:</span> none;</span>
+<span class="token selector">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h2 id="总结"><a href="#总结" aria-hidden="true" class="header-anchor">#</a> 总结</h2> <p>🎉 💯 💯 💯</p> <ul><li>当从头跟着实现时，会遇到一些小问题，这个时候查文档才更加深刻</li> <li>vue props 可以使用 <code>v-bind</code> 来实现动态绑定</li> <li>js 通过 <code>[]</code> 来使用动态的key</li> <li>对于 <code>head + tail</code> 通过改变定位来实现</li></ul></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/vuepress_notes_public/reactivity_demo/reactivity.html">
+          响应式数据
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/vuepress_notes_public/assets/js/9.528204ac.js" defer></script><script src="/vuepress_notes_public/assets/js/2.fe74a032.js" defer></script><script src="/vuepress_notes_public/assets/js/app.2153f277.js" defer></script>
+  </body>
+</html>
